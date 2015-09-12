@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" nombre="Prueba" nFases="3" Fase="3" FotoUrl="Prueba\Foto_0.png Prueba\Foto_1.png Prueba\Foto_2.png" Clues="Pista_number_one Ultima_pista Ultima_pista" />
