@@ -17,7 +17,7 @@ public class Controlador_UI : MonoBehaviour {
             StreamReader reader = new StreamReader(Path.Combine(Application.persistentDataPath, iniPath));
             XmlSerializer lectorXML = new XmlSerializer(typeof(Config));
             ini = (Config)lectorXML.Deserialize(reader);
-
+            reader.Close();
         }
         catch (Exception e)
         {
@@ -50,6 +50,7 @@ public class Controlador_UI : MonoBehaviour {
             StreamReader reader = new StreamReader(Path.Combine(Application.persistentDataPath, path));
             XmlSerializer lectorXML = new XmlSerializer(typeof (Personaje));
             pj = (Personaje) lectorXML.Deserialize(reader);
+            reader.Close();
 
         }
         catch (Exception e)

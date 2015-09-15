@@ -17,6 +17,7 @@ public class Controlador_GM : MonoBehaviour {
         //StreamReader reader = new StreamReader(Path.Combine( GetPath() ,"Game.xml"));
         XmlSerializer lectorXML = new XmlSerializer(typeof(Game));
         Game nivel = (Game) lectorXML.Deserialize(reader);
+        reader.Close();
         try
         {
             int restantes = nivel.nFases - nivel.Fase;
@@ -52,6 +53,7 @@ public class Controlador_GM : MonoBehaviour {
             StreamReader reader = new StreamReader(Path.Combine(Application.persistentDataPath, iniPath));
             XmlSerializer lectorXML = new XmlSerializer(typeof(Config));
             ini = (Config)lectorXML.Deserialize(reader);
+            reader.Close();
 
         }
 
